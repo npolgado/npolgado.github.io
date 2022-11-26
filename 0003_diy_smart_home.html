@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dumb Homes (Smart*)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A word on this website's design.">
+</head>
+
+<body>
+    <main>
+        <a href="writings.html">BACK</a>
+        <br>
+        <section class="mod-blog">
+            <h3>What is a smart home?</h3>
+            <p>The term smart home is ubiquitous with an IoT embedded ecosystem where devices talk to each other and
+                exhange infomation about its enviorment. I've been working on a home automation system myself, and
+                rather than use the many free home assistance platforms, I wanted to make one myself. </p>
+
+            <h3>The core of an Smart Home</h3>
+            <h4>At the core of a Smart home ecosystem is 3 main things. </h4>
+            <ul>
+                <li>A Controller: The user or admin which views all information, and can control all aspects of the
+                    "smart home"</li>
+                <li>A Network Hub: The central processing system between the nodes and the clients of the network. NOTE:
+                    in some Smart homes there is no hub, and the typology is closer to an Ad-Hoc network</li>
+                <li>Edge Nodes: the many embedded systems that transmit infomation or wait for information to perform
+                    their task</li>
+            </ul>
+            <br>
+            <p>The goal was not just to automate the many different areas in my home, but to also provide a little more
+                security, and insight into the activity in my room. With an IoT system there is the possibility for
+                voice or event based automation. This gave me the idea to aim for a large final product. My goal is to
+                create a suggestion system on top of my event based smart home system, which would suggest automations
+                based on my behavior and patterns. This would be great in the case of automations that I had not thought
+                of, or even possibly new features to add to the system </p>
+            <br>
+            <p>I choose to use a python Flask server as my central hub website. This will allow any user on the home
+                network to access controls of my home automations. I created a simple dashboard website with different
+                pages for everything I'm planning on implementing. </p>
+            <br>
+            <br>
+            <h3>Roadblocks</h3>
+            <p>One of the biggest issues right now is the wireless communication. Without it I can't test database
+                inquiries or updates based on node processing systems. The goal is to have the nodes send frequenct
+                polls with its sensor data, and log that in a database for further analytics. I've gone between a number
+                of forms of wireless communcations, including the ESP8266-ESP01, the NRF24LO1+, and a 433 MHz wireless
+                communications module. There are pros and cons with each but the big issue is the cross arduino / raspi
+                talk. I'm planning on getting arduino uno's with wifi shields, or wifi enables ESP microcontroller
+                modules. Either one will allow for each two way wifi communicaitons</p>
+            <br>
+            <p>My main goal was to really just make it easier to wake up in the morning. I give myself no time, and if
+                things like lights turning on, shower turning on, coffee being made, or just a simple calendar view of
+                today along with some content, and news. I'd love to see it suggest turning on the lights and computer
+                when im close to home. Or reminding me to exercise if I haven't that day.</p>
+            <h3>see my progress here: </h3>
+            <a href="https://github.com/npolgado/Home-Automation">npolgado/Home-Automation</a>
+        </section>
+
+    </main>
+</body>
+
+</html>

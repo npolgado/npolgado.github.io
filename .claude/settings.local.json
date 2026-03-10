@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/Users/Nick/Documents/GitHub/npolgado.github.io -type f | xargs file)",
+      "Bash(grep -r \"<!--\\\\|/\\\\*\\\\|^\\\\s*#\" /c/Users/Nick/Documents/GitHub/npolgado.github.io/writings.html /c/Users/Nick/Documents/GitHub/npolgado.github.io/writings/*.html)"
+    ]
+  }
+}
